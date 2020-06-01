@@ -118,6 +118,19 @@ ul {
   padding: 0;
 }
 
+.list-contacts .link {
+  color:#757575;
+}
+
+.icon-contact {
+  fill: #757575;
+  margin-right: 10px;
+}
+
+.icon-contact:hover {
+  fill: var(--accent-color);
+}
+
 .list-contacts li:nth-child(odd) {
   margin-right: 10px;
 }
@@ -230,11 +243,15 @@ footer {
   width: 44px;
   height: 44px;display: flex;
   justify-content: center;
-
+  
   margin: 0;
   padding: 0;
   
   margin-right: 10px;
+}
+
+.icon-footer {
+  fill: #ffffff;
 }
 
 .footer-social-media li:last-child {
@@ -606,6 +623,14 @@ h3 {
   margin-right: 10px;
 }
 
+.icon-team {
+  fill: #AFB1B8;
+}
+
+.icon-team:hover {
+  fill: #ffffff;
+}
+
 .social-media li:last-child {
   margin-right: 0;
 }
@@ -666,6 +691,14 @@ h3 {
 .clients .client:hover,
 .clients .client:focus {
     border-color: var(--accent-color);
+}
+
+.icon-client {
+  fill: #AFB1B8;
+}
+
+.icon-client:hover {
+  fill: var(--accent-color);
 }
 
 
