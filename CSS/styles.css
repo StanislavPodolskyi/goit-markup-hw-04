@@ -98,6 +98,11 @@ ul {
   padding: 0;
 }
 
+.site-nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list-nav .link {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -118,24 +123,24 @@ ul {
   padding: 0;
 }
 
-.list-contacts .link {
+.list-contacts .link-contact {
   color:#757575;
 }
 
 .icon-contact {
   fill: #757575;
-  margin-right: 10px;
 }
 
-.icon-contact:hover {
+.contact-title {
+  margin-left: 10px;
+}
+
+.link-contact:hover {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
-.list-contacts li:nth-child(odd) {
-  margin-right: 10px;
-}
-
-.list-contacts li:nth-of-type(2) {
+.list-contacts li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -334,7 +339,7 @@ footer {
   margin-bottom: 0;
   margin-top: 0;
   padding-top: 200px;
-  padding-bottom: 200px;
+  
 
   max-width: 1600px;
   height: 600px;
@@ -779,8 +784,8 @@ button:focus {
   
   border: 1px solid #eeeeee;
   border-radius: 5px;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
+
 
 .portfolio-list li:nth-of-type(3n) {
   margin-right: 0;
@@ -836,10 +841,6 @@ button:focus {
 
 .portfolio-list li:hover,
 .portfolio-list:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  
-  display: flexbox;
-
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
