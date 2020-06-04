@@ -135,9 +135,15 @@ ul {
   margin-left: 10px;
 }
 
-.link-contact:hover {
-  fill: var(--accent-color);
+.link-contact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.link-contact:hover .icon-contact,
+.link-contact:hover .contact-title {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .list-contacts li:not(:last-child) {
@@ -242,7 +248,7 @@ footer {
   padding: 0;
 }
 
-.footer-social-media li {
+.footer-social-media .link {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
@@ -263,8 +269,8 @@ footer {
   margin-right: 0;
 }
 
-.footer-social-media li:hover,
-.footer-social-media li:focus {
+.footer-social-media .link:hover,
+.footer-social-media .link:focus {
   background-color: var(--accent-color);
 }
 
@@ -632,10 +638,6 @@ h3 {
   fill: #AFB1B8;
 }
 
-.icon-team:hover {
-  fill: #ffffff;
-}
-
 .social-media li:last-child {
   margin-right: 0;
 }
@@ -643,6 +645,11 @@ h3 {
 .social-media li:hover,
 .social-media li:focus {
   background-color: var(--accent-color);
+}
+
+.link-social-media:hover .icon-team,
+.link-social-media:focus .icon-team {
+  fill: #ffffff;
 }
 
   
@@ -680,7 +687,7 @@ h3 {
   padding: 0;
 }
 
-.clients-list .client {
+.client-link {
   display: inline-block;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -693,17 +700,19 @@ h3 {
   margin: 0;
 }
 
-.clients .client:hover,
-.clients .client:focus {
-    border-color: var(--accent-color);
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
 }
 
 .icon-client {
-  fill: #AFB1B8;
-}
-
-.icon-client:hover {
-  fill: var(--accent-color);
+  fill: rgb(86, 94, 126);
 }
 
 
